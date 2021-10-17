@@ -43,7 +43,7 @@ while True:
             sleep(2)
             sensor.measure()
             temp = sensor.temperature()
-            print(temp)
+            print("temp")
             # Vi har sat den til 20C grader, da vi ikke kunne varme sensoren op til 30)
             if temp >20:
                 for x in range(0, 5):
