@@ -1,0 +1,21 @@
+from machine import Pin 
+import neopixel 
+
+n = 12
+p = 15 
+
+np = neopixel.NeoPixel(Pin(p), n)
+
+np[0] = (0, 0, 255)
+np[1] = (0, 255, 0)
+np[2] = (255, 0, 0)
+np[3] = (0, 0, 255)
+np[4] = (0, 255, 0)
+np[5] = (255, 0, 0)
+np[6] = (0, 0, 255)
+np[7] = (0, 255, 0)
+np[8] = (255, 0, 0)
+np[9] = (0, 0, 255)
+np[10] = (0, 255, 0)
+np[11] = (255, 0, 0)
+np.write()
